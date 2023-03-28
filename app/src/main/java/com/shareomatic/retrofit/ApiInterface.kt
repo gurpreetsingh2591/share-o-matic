@@ -1,6 +1,7 @@
 package com.shareomatic.retrofit
 
 
+import com.macrew.medirydes.uiControler.login.model.loginNew.LoginModelNew
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -19,7 +20,7 @@ interface ApiInterface {
         @Field(Constant.EMAIL) email: String,
         @Field(Constant.PASSWORD) password: String,
         @Field(Constant.COMPANY_ID) company_id: String
-    ): Call<String>
+    ): Call<LoginModelNew>
 
 
 
