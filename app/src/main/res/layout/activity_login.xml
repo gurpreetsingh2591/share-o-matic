@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,9 +22,9 @@
 
             <ImageView
                 android:id="@+id/loginHintTv1"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_100sdp"
-                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_30sdp"
                 android:src="@drawable/logo" />
 
             <TextView
@@ -36,14 +37,14 @@
                 android:singleLine="true"
                 android:text="@string/welcome_to_share_o_matic"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_16sdp" />
 
 
             <TextView
                 android:id="@+id/loginHintTvSub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
@@ -60,26 +61,26 @@
                 android:background="@drawable/bg_otp">
 
 
-                <!--                <com.hbb20.CountryCodePicker-->
-                <!--                    android:id="@+id/countryCode"-->
-                <!--                    android:layout_width="@dimen/dp80"-->
-                <!--                    android:layout_height="50dp"-->
-                <!--                    android:layout_marginTop="-10dp"-->
-                <!--                    android:background="@android:color/transparent"-->
-                <!--                    android:clickable="true"-->
-                <!--                    android:focusable="true"-->
-                <!--                    android:gravity="center"-->
-                <!--                    android:visibility="visible"-->
-                <!--                    app:ccpDialog_backgroundColor="?attr/backgroundColor"-->
-                <!--                    app:ccpDialog_keyboardAutoPopup="false"-->
-                <!--                    app:ccp_autoDetectCountry="true"-->
-                <!--                    app:ccp_showArrow="false"-->
-                <!--                    app:ccp_showFlag="false"-->
-                <!--                    app:ccp_textColor="@color/black"-->
-                <!--                    app:ccp_showNameCode="false"-->
-                <!--                    app:ccp_showPhoneCode="true"-->
-                <!--                    app:ccp_textSize="17dp"-->
-                <!--                    tools:ignore="RtlSymmetry" />-->
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCode"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:ccpDialog_backgroundColor="?attr/backgroundColor"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_showArrow="false"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_textColor="@color/black"
+                    app:ccp_textSize="17dp"
+                    tools:ignore="RtlSymmetry" />
 
 
                 <EditText
@@ -98,84 +99,23 @@
                     tools:ignore="NotSibling,TextFields" />
             </LinearLayout>
 
-            <LinearLayout
-
-                android:id="@+id/constraintLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/termConditionCheck"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@color/black"
-                        android:visibility="gone" />
-
-
-                    <TextView
-                        android:id="@+id/termCondition"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:gravity="center_vertical"
-                        android:text="@string/i_have_read_terms_and_conditions"
-                        android:textColor="@color/grey"
-                        android:textSize="15sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp">
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/privacypolicyCheck"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@color/grey"
-                        android:visibility="gone" />
-
-
-                    <TextView
-                        android:id="@+id/privacypolicy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:gravity="center_vertical"
-                        android:text="@string/i_have_read_privacy_policy"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-                </LinearLayout>
-            </LinearLayout>
-
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/button"
+                android:id="@+id/btnCodeConfirm"
+                android:layout_gravity="center_horizontal"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:background="@drawable/bg_login_btn"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/colorTab"
                 android:fontFamily="@font/poppins_semibold"
-
-                />
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:elevation="@dimen/_5sdp"
+                app:cornerRadius="@dimen/_5sdp"
+                app:rippleColor="@color/colorPrimary" />
 
 
         </LinearLayout>

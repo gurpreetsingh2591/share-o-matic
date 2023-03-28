@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#E4E4E4</color>
+    <color name="colorPrimary">#CA9830</color>//#ffcc33
+    <color name="colorPrimary2">#ddbb51</color>//#
+    <color name="colorTab">#F6D13A</color>//#
+    <color name="editTextColor">#65F6D13A</color>//#
+    <color name="disabled_color">#808C8C8B</color>
 </resources>
