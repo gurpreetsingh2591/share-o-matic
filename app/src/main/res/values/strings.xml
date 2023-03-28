@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShareoMatic</string>
+
+    <string name="welcome_to_share_o_matic">Welcome to Share-O-Matic</string>
+    <string name="enter_your_mobile_number_to_proceed">Enter your mobile number to proceed</string>
+
+
+
+    <string name="i_have_read_privacy_policy">I have read privacy policy</string>
+    <string name="i_have_read_terms_and_conditions">I have read Terms and Conditions</string>
+    <string name="terms_amp_condition"><![CDATA[Terms & condition]]></string>
+    <string name="enter_mobile_number">Mobile Number</string>
+
+
+
+</resources>
